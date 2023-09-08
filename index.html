@@ -1,0 +1,43 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+</head>
+    <body>
+    <div class="container">
+        <h1> Generate a <br><span>random password</span></h1>
+        <h2 class="secondLine">Never use an insecure password again</h2>
+      
+    <input class = "btn" type="button" onclick="test()" value="GENERATE PASSWORD" /> 
+   
+
+
+
+     <div class="slidecontainer">
+
+    <input type="range" min="1" max="20"  class="slider" value="" id="myRange" oninput="myFunction()">
+  <p>Number of Character: <span id="demo"></span></p> 
+ 
+      </div>
+    <div class = "passwordBoxAround">
+    
+    <div id="passwordBox">123456789</div>
+
+    <img class="copy-icon" onclick="copyPassword()" src ="/images/clipboard.svg"/>
+    <div id="passwordBox2">123456789</div>
+ 
+    <img class="copy-icon" onclick="copyPassword2()" src ="/images/clipboard.svg"/>
+  
+</div>
+
+</div> 
+    
+    <script src="index.js"></script>
+    </body>
+</html>
